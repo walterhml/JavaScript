@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+// let frutaNome = prompt('Digite o nome da fruta: ','');
+// let img;
+
+// document.write('Nome da fruta em portugues: ' + frutaNome)
+
+   
+       
+        let nomeFrutaPT = prompt("Digite o nome da fruta em português:");
+
+      
+        let imagem = new Image();
+
+        switch (nomeFrutaPT.toLowerCase()) {
+            case "maçã":
+                imagem.src = "maca.jpg";
+                break;
+            case "banana":
+                imagem.src = "banana.jpg";
+                break;
+            case "laranja":
+                imagem.src = "laranja.jpg";
+                break;
+            case "morango":
+                imagem.src = "morango.jpg";
+                break;
+            default:
+               
+                document.write("Fruta não encontrada no banco de dados.");
+                break;
+        }
+
+       
+        document.body.appendChild(imagem);
+
+        document.write('Nome da fruta em portugues: ' + nomeFrutaPT)
+        document.write('<br>Nome da Fruta em Inglês: ');
+        document.write("<p>" + nomeFrutaEN + "</p>");
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 
